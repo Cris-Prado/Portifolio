@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap');
 *{
     margin: 0 auto;
     padding: 0;
@@ -422,6 +423,85 @@ main{
         background-color: rgba(0, 0, 0, 0.712);
         cursor: pointer;
     }
+
+    .classe{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .label{
+        text-align: left;
+    
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        color: #fff;
+    }
+    
+    .input{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        outline: none;
+        border: 0;
+        border-radius: 5px;
+        padding-left: 35px;
+    }
+    
+    .input::placeholder{
+        padding-left: 1px;
+    }
+    
+    .textarea{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+    
+    .botao{
+        display: flex;
+        border: 0;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        font-family: sans-serif;
+        height: 40px;
+        margin: 3vh auto  5vh auto;
+        cursor: pointer;
+        background: rgb(115, 113, 245);
+        border-radius: 5px;
+    }
+    
+    .botao:hover{
+        transition: 0.4s;
+        background: rgb(113, 245, 135);
+        box-shadow: 0 0px 10px 0px rgb(14, 153, 95);
+    }
+    .botao:active{
+        transition: 0.1s;
+        background: rgb(245, 113, 113);
+        box-shadow: 0 0px 10px 0px rgb(153, 14, 14);
+    }
+    
+    .loge{
+        position: absolute;
+        display: flex;
+        padding-top: 20px;
+        font-size: 22pt;
+        color: rgb(161, 160, 160);
+    }
     /* Fim do main */
 
     /*Inicio do Footer */
@@ -843,6 +923,85 @@ main{
         background-blend-mode:darken;
         background-color: rgba(0, 0, 0, 0.712);
         cursor: pointer;
+    }
+
+    .classe{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .label{
+        text-align: left;
+    
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        color: white;
+    }
+    
+    .input{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        outline: none;
+        border: 0;
+        border-radius: 5px;
+        padding-left: 35px;
+    }
+    
+    .input::placeholder{
+        padding-left: 1px;
+    }
+    
+    .textarea{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+    
+    .botao{
+        display: flex;
+        border: 0;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        font-family: sans-serif;
+        height: 40px;
+        margin: 3vh auto  5vh auto;
+        cursor: pointer;
+        background: rgb(115, 113, 245);
+        border-radius: 5px;
+    }
+    
+    .botao:hover{
+        transition: 0.4s;
+        background: rgb(113, 245, 135);
+        box-shadow: 0 0px 10px 0px rgb(14, 153, 95);
+    }
+    .botao:active{
+        transition: 0.1s;
+        background: rgb(245, 113, 113);
+        box-shadow: 0 0px 10px 0px rgb(153, 14, 14);
+    }
+    
+    .loge{
+        position: absolute;
+        display: flex;
+        padding-top: 20px;
+        font-size: 22pt;
+        color: rgb(161, 160, 160);
     }
     /* Fim do Main */
 

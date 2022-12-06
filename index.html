@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Cristiano Codes</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
                                         </ul>
                                 </li>
                                 <li class="item-menu night-mode-available"><a href="#repositorios"  class="link-menu">Repostirórios</a></li>
-                                <li class="item-menu night-mode-available"><a href="/"  class="link-menu">O que fazemos ?</a></li>
+                                <li class="item-menu night-mode-available"><a href="/"  class="link-menu">Feedback</a></li>
                                 <li class="item-menu night-mode-available"><a href="/"  class="link-menu">Configurações</a></li>
                             </ul>
                             <a href="/php/form.php" class="entrar item-menus night-mode-available " >ENTRAR</a>
@@ -92,6 +93,35 @@
             </div>
         </section>
         <br><br>
+        <h1 class="text"><u>Deixe seu feedback</u></h1><br><br>
+        <section class="feedback">
+            <form action="https://formsubmit.co/cristianoprado365@gmail.com" method="POST" class="form">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo feedback!">
+                <input type="hidden" name="_captcha" value="false">
+                <fieldset>
+                    <div class="classes">
+                        <div class="classe">
+                            <label for="user" class="label">Nome</label><br>
+                            <i class='bx bx-user loge'></i>
+                            <input type="text" name="user" id="user" class="input" placeholder="Nome Completo" required>
+                        </div>
+
+                        <div class="classe">
+                            <label for="email" class="label">Email</label><br>
+                            <i class='bx bx-envelope loge'></i>
+                            <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                        </div><br>
+                        
+                        <div class="classe">
+                            <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea" placeholder="Deixe aqui seu comentario!"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" class="botao" onclick="msg()">
+            </form>
+        </section>
+        <br><br>
     </main>
     <footer class="footer">
         <div class="tamanho">
@@ -109,5 +139,10 @@
         </div>
     </footer>
     <script defer src="/js/active-mobile-button.js"></script>
+    <script>
+        function msg() {
+          alert("Você enviou seu feedback!");
+        }
+    </script>
 </body>
 </html>
