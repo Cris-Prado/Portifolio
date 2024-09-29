@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
+    <title>Cristiano | Prado</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="fixed-nav">
+                <a href="#" class="logo link">Cristiano</a>
+                <div class="mobile">
+                    <div class="linha" id="line1"></div>
+                    <div class="linha" id="line2"></div>
+                    <div class="linha" id="line3"></div>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="item"><a href="#" class="links">Inicio</a></li>
+                <li class="item"><a href="#sobre" class="links">Sobre</a></li>
+                <li class="item"><a href="#projetos" class="links">Projetos</a></li>
+                <li class="item"><a href="#" class="links">Contatos</a></li>
+                <li class="item"><a href="https://github.com/Cris-Prado/Hamburgeria-Dev" target="_blank" class="links">Github</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="head">
+            <img src="/src/img/Cristiano-foto-removebg-preview.png" alt="Foto Cristiano perfil sem fundo" class="image-perfil">
+            <p class="pg">Olá, sou Cristiano Prado e sou graduado em Analise e Desenvolvimento de Sistemas, atualmente trabalho como Freelancer Front-End, entretanto procuro me tornar um desenvolvedor FullStack, sempre procuro aprender sobre novas tecnologias, gosto de animes e desenhos e tenho o roby de programar desde pequeno!</p>
+        </section>
+        
+        <section class="projetos">
+            <h2 class="t1" id="projetos">Meus Projetos</h2><br>
+            <div class="grup-box">
+                <div class="box-text">
+                    <div class="enfa-box">
+                        <p class="name-project-box"><u>Tela de Login</u></p>
+                        <p class="date-post"><em>26 de agosto de 2024.</em></p>
+                    </div>
+
+                    <div class="box-linguagens">
+                        <span class="pg1">CSS</span>
+                        <span class="pg1"> HTML</span>
+                        <span class="pg1">JAVASCRIPT</span>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 class="descrip-box">Descrição do projeto</h4>
+                    <p class="pg2">Uma tela de cadastro e login responsiva feita somente com HTMl CSS e JAVASCRIPT </p>
+                </div>
+
+                <div class="visit-cod">
+                    <div class="box-cod" id="tela-de-login"></div>
+                </div>
+            </div><br>
+            <div class="grup-box">
+                <div class="box-text">
+                    <div class="enfa-box">
+                        <p class="name-project-box"><u>Sistema de Usuarios</u></p>
+                        <p class="date-post"><em>07 de setembro de 2024.</em></p>
+                    </div>
+
+                    <div class="box-linguagens">
+                        <span class="pg1">CSS</span>
+                        <span class="pg1"> HTML</span>
+                        <span class="pg1">JAVASCRIPT</span>
+                        <span class="pg1">PHP</span>
+                        <span class="pg1">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 class="descrip-box">Descrição do projeto</h4>
+                    <p class="pg2">Este é um projeto completo feito tanto o front quando o back-end de um sistema de cadastro e login de usuario com salvamento de sessão e controle de usuario pelo bando de dados </p>
+                </div>
+
+                <div class="visit-cod">
+                    <div class="box-cod"></div>
+                </div>
+            </div><br>
+            <div class="grup-box">
+                <div class="box-text">
+                    <div class="enfa-box">
+                        <p class="name-project-box"><u>Lanchonete Dev</u></p>
+                        <p class="date-post"><em>30 de setembro de 2024.</em></p>
+                    </div>
+
+                    <div class="box-linguagens">
+                        <span class="pg1">CSS</span>
+                        <span class="pg1"> HTML</span>
+                        <span class="pg1">JAVASCRIPT</span>
+                        <span class="pg1">API</span>
+                        <span class="pg1">TAILWINDCSS</span>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 class="descrip-box">Descrição do projeto</h4>
+                    <p class="pg2">Pagina web que permite o usuario cadastrar seu endereço e fazer pedidos online de uma lanchote dev, com descrição do horario de funcionamento e geralmetno a mensagem para ser enviada no whatssap da lachonete</p>
+                </div>
+
+                <div class="visit-cod">
+                    <div class="box-cod"></div>
+                </div>
+            </div><br>
+            <div class="mais-projetos">
+                <span class="pg3">Veja mais projetos</span>
+            </div>
+        </section><br>
+
+        <section class="message">
+            <form action="https://formsubmit.co/cristianoprado365@gmail.com" method="POST" class="form-mensage">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Obrigado por sua mensagem!">
+                <input type="hidden" name="_template" value="table">
+                <h2 class="t1">Me envie uma mensagem!</h2><br>
+
+                <div class="inp-form">
+                    <i class="fa-solid fa-user icox"></i>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" class="inp" required>
+                </div>
+
+                <div class="inp-form">
+                    <i class="fa-solid fa-envelope icox"></i>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" class="inp" required>
+                </div>
+
+                <div class="inp-mensage">
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite aqui!" required></textarea>
+                </div>
+
+                <button type="submit" value="Enviar" class="men-btn">Enviar</button>
+            </form>
+        </section><br>
+    </main>
+    <footer class="footer">
+        <div class="fool-grup"></div>
+    </footer>
+    <script src="/src/config/js/MenuToogle.js"></script>
+</body>
+</html>

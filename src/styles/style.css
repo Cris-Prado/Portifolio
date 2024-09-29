@@ -1,0 +1,386 @@
+.header{
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    background-color: var(--black);
+    color: rgb(255, 255, 255);    border-bottom: 1px solid red;
+    border-bottom: 1px solid red;
+
+}
+
+.link{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.item, .links, .link{
+    color: var(--white);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.links:hover{
+    opacity: 30%;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Menu Mobile */
+.mobile{
+    display: none;
+}
+
+.fixed-nav{
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+@media (max-width: 720px) {
+    .mobile{
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .linha{
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: all 0.2s;
+
+    }
+
+    .active #line1{
+        position: relative;
+        top: 10px;
+        transform: rotate(45deg);
+        transition: all 0.2s;
+    }
+    .active #line2{
+        opacity: 0;
+    }
+    .active #line3{
+        position: relative;
+        bottom: 10px;
+        transform: rotate(315deg);
+        transition: all 0.2s;
+    }
+
+    .list{
+        flex-direction: column;
+        justify-content: start;
+        margin: 0 0 0 -10px ;
+        display: none;
+        transition: all 0.4s;
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: -300px;
+        width: 55vw;
+        height: 100vh;
+    }
+
+    .list.active{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        border-right: 1px solid red;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.4s;
+    }
+
+    .item{
+        margin: 10px 0;
+    }
+
+    .list.bt-item{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bt-item{
+        display: flex;
+        width: 100%;
+        height: 110%;
+        position: absolute;
+        bottom: -250px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .links-bt{
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 90%;
+    }
+    
+    .links-bt:hover{
+        opacity: 100%;
+    }
+
+}
+
+/*Fim do Menu Mobile */
+.main{
+    display: flex;
+    background-color: var(--black);
+    background: url('https://images3.alphacoders.com/136/thumb-1920-1364877.png');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-color: rgb(0, 0, 0);
+    background-blend-mode: darken;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 100px 0 50px 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.image-perfil{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 250px;
+    height: 250px;
+    background-color: var(--slate950);
+}
+
+.pg1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t1{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.form-mensage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.icox{
+    text-indent: 10px;
+}
+
+.inp-form{
+    width: 100%;
+    border: 1px solid white;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f8f9;
+    color: black;
+    gap: 15;
+}
+
+.inp{
+    width: 100%;
+    height: 100%;
+    text-indent: 0.5em;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.inp-mensage{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #f7f8f9;
+    color: black;
+    height: 150px;
+}
+
+#mensagem{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #f7f8f9;
+}
+
+.men-btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Remover autocomplete azul dos inputs */
+}
+
+
+.projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.grup-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    flex-wrap: nowrap;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+.box-text{
+    width: 20%;
+    height: 90%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.name-project-box{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.info-box{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.descrip-box{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.box-linguagens{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visit-cod{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box-cod{
+    border: 3px solid white;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+#tela-de-login{
+    background-image: url('/src/img/Tela\ de\ login.png');
+    background-size: cover;
+    background-position: 50%; 
+}
+
+.box-cod:hover{
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.mais-projetos{
+    width: 100%;
+    border: 1px solid aliceblue;
+    height: 45px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 450px;
+    width: 100%;
+    border-top: 2px solid rgb(21, 255, 0);
+    background-color: var(--black);
+}

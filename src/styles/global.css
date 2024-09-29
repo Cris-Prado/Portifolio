@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --black: black;
+    --white: white;
+    --slate50:  #f8fafc;
+    --slate900: #0f172a;
+    --slate950: #020617;
+
+    --zinc50:#fafafa;
+    --zinc900:#18181b;
+    --zinc950:#09090b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.pg1{
+    font-family:'Poppins', sans-serif;
+    font-size: 80%;
+    text-indent: 0.5em;
+}
+
+.pg2{
+    font-family:'Poppins', sans-serif;
+    font-size: 90%;
+    text-align: center;
+}
+
+.pg3{
+    font-family:'Poppins', sans-serif;
+    font-size: 90%;
+    color: black;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.pg3:hover{
+    text-decoration: underline 2px red;
+}
