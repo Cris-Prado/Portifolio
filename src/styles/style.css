@@ -157,7 +157,7 @@
     background-color: var(--black);
     background-size: cover;
     background-position: 100% 100%;
-    background-color: #172554;
+    background-color: rgb(29, 29, 29);
     background-blend-mode: darken;
     color: white;
     width: 100%;
