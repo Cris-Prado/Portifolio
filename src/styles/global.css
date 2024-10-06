@@ -10,6 +10,9 @@
     --zinc50:#fafafa;
     --zinc900:#18181b;
     --zinc950:#09090b;
+
+    --Yellow900: #713f12;
+    --Yellow950: #422006;
 }
 
 *{
@@ -26,11 +29,12 @@ html{
     font-family:'Poppins', sans-serif;
     font-size: 80%;
     text-indent: 0.5em;
+    text-align: center;
 }
 
 .pg2{
     font-family:'Poppins', sans-serif;
-    font-size: 90%;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -40,8 +44,13 @@ html{
     color: black;
     font-weight: 900;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 .pg3:hover{
     text-decoration: underline 2px red;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Remover autocomplete azul dos inputs */
 }
